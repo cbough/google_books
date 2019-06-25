@@ -1,0 +1,11 @@
+<div class='container'>
+  <% books.each do |book| %>
+  <div class='card' style='width:400px'>
+    <img class='card-img-top' src='<%= book.image_link(:zoom => 3) %>' alt='Card image' style='width:100%'>
+    <div class='card-body'>
+      <h4 class='card-title'><%= book.title %></h4>
+      <p class='card-text'>By: <%= book.authors %></p>
+      <a href='<%= book.info_link %>' class='btn btn-primary' target='_blank'>More info</a>
+    </div>
+  <% end %>
+</div>
