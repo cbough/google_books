@@ -26,6 +26,7 @@ PLATFORMS
 
 DEPENDENCIES
   googlebooks
+  httparty
   sinatra
 
 BUNDLED WITH
